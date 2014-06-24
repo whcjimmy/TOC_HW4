@@ -3,6 +3,7 @@ import java.util.*;
 
 public class Info
 {
+    //max is the maximum tading value, min is the minimum trading value, and size is the amount of distinct months
     private int max, min, size;
 
     private LinkedHashMap<Integer, Integer> month;
@@ -22,9 +23,9 @@ public class Info
     
     public void search(int m, int v)
     {
-	//System.out.println("AAA");
 	if(!this.month.containsKey(m)) this.size++;
 	this.month.put(m, v);
+	//update the max and min
 	if(this.max < v) this.max = v;
 	if(this.min > v) this.min = v;
     }
