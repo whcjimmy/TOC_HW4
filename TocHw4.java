@@ -31,7 +31,7 @@ public class TocHw4
 	    matcher  = pattern.matcher(str);
 	    matcher2 = pattern2.matcher(str);
 
-	    if(matcher.find() && matcher.group() != "高雄市路")
+	    if(matcher.find() && matcher.group() != "高雄市路" && matcher.group() != "嘉義縣蕃路")
 		str = matcher.group();
 	    else if(!matcher.find() && matcher2.find())
 		str = matcher2.group();
