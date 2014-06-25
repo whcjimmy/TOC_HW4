@@ -71,7 +71,7 @@ public class TocHw4
 	for(Map.Entry<String, Info>entry:road.entrySet())
 	{
 	    if(entry.getValue().getSize() == max_distinct_month)
-		System.out.println(entry.getKey()+", 最高成交價:"+entry.getValue().getMax()+",最低成交價:"+entry.getValue().getMin());
+		System.out.println(entry.getKey()+"，最高成交價:"+entry.getValue().getMax()+"，最低成交價:"+entry.getValue().getMin());
 	}
     }
 }
